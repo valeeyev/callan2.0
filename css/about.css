@@ -41,6 +41,7 @@ ul {
   padding-bottom: 80px;
   min-height: 100vh;
   font-family: "Space Grotesk", sans-serif;
+  background-color: #54626f !important;
 }
 .section-title {
   font-weight: 700;
@@ -99,4 +100,7 @@ ul {
 .about_content_box_all {
   padding: 28px;
   font-family: "Space Grotesk", sans-serif;
+}
+.img_about {
+  border-radius: 10px;
 }

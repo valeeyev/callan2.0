@@ -53,20 +53,31 @@ a:focus {
   font-family: var(--secondary);
 }
 .title {
-  width: 70%;
+  width: 80%;
   margin: 1rem auto;
   font-family: "Space Grotesk", sans-serif;
   font-size: smaller;
-  font-weight: 700;
+  font-weight: 400;
+  padding-left: 1rem;
 }
 .title p {
   font-size: medium;
   font-weight: normal;
 }
+.border_left {
+  /* border: #ffbf00 solid 2px; */
+  border-left: var(--gold) 3px solid;
+}
+.bg-light {
+  background-color: #748eaa !important;
+}
 /* >>>> media of container >>>>>> */
 @media only screen and (max-width: 1400px) {
   .container_ {
     width: 100%;
+  }
+  .title {
+    font-size: smaller;
   }
 }
 
