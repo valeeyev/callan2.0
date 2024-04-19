@@ -1,0 +1,77 @@
+/* outfit font family */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --mainfont: "Outfit", sans-serif;
+  --secondary: "Space Grotesk", sans-serif;
+  --navy: #1e2235;
+  --gold: #ffbf00;
+  --gap_: 2rem;
+  --radius_: 1rem;
+}
+a {
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover,
+a:focus {
+  text-decoration: none; /* Remove underline on hover or focus */
+}
+.container_ {
+  width: 100%;
+  margin: 0 auto;
+  border: #1e2235 2px solid;
+  position: relative;
+}
+.flexbox-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid-col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--gap_);
+}
+.logo {
+  width: auto;
+  height: 70px;
+}
+.highlited {
+  border-left: var(--navy) 2px solid;
+}
+.white {
+  background-color: azure;
+}
+.second_font {
+  font-family: var(--secondary);
+}
+.title {
+  width: 70%;
+  margin: 1rem auto;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: smaller;
+  font-weight: 700;
+}
+.title p {
+  font-size: medium;
+  font-weight: normal;
+}
+/* >>>> media of container >>>>>> */
+@media only screen and (max-width: 1400px) {
+  .container_ {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .logo {
+    height: 40px;
+  }
+}
