@@ -1,19 +1,22 @@
 (function ($) {
   $(function () {
+    // Function to toggle the mobile menu
+    $("#nav-toggle").click(function () {
+      $("nav ul").slideToggle(100); // Adjust the duration for smoother animation
+      $(this).toggleClass("active");
+    });
+
+    // Function to toggle the dropdown menus
     $("nav ul li > a:not(:only-child)").click(function (e) {
-      $(this).siblings(".nav-dropdown").slideToggle();
-      $(".nav-dropdown").not($(this).siblings()).hide();
+      var $dropdown = $(this).siblings(".nav-dropdown");
+      $dropdown.slideToggle(100); // Adjust the duration for smoother animation
+      $(".nav-dropdown").not($dropdown).hide();
       e.stopPropagation();
     });
+
+    // Hide dropdown menus when clicking outside
     $("html").click(function () {
       $(".nav-dropdown").hide();
-    });
-    // Toggle open and close nav styles on click
-    $("#nav-toggle").click(function () {
-      $("nav ul").slideToggle();
-    });
-    $("#nav-toggle").on("click", function () {
-      this.classList.toggle("active");
     });
   });
 })(jQuery);

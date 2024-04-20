@@ -44,7 +44,10 @@ a:focus {
   height: 70px;
 }
 .highlited {
+  display: flex;
+  align-items: center;
   border-left: var(--navy) 2px solid;
+  color: #00bd2a;
 }
 .white {
   background-color: azure;
