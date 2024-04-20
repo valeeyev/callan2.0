@@ -55,7 +55,7 @@ section header h2 {
   color: var(--navy);
   text-transform: capitalize;
   font-weight: 600;
-  padding-right: 0.938rem;
+  padding-left: 1.2rem;
   font-family: "Space Grotesk", sans-serif;
 }
 .grid-container {

@@ -136,6 +136,7 @@ section {
 .select-field option {
   color: var(--gold);
   font-size: larger;
+  background-color: var(--navy);
 }
 
 /* Button styling */
@@ -197,6 +198,212 @@ section {
   z-index: 9998;
   display: none;
 }
+/* !partners styling */
+.partners {
+  padding: 2rem 0;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: #dedede;
+}
+.partners h1 {
+  background-color: transparent;
+}
+.marquee-container {
+  width: 80%; /* Adjust the width as needed */
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: inline-block;
+  white-space: nowrap;
+  /* animation: marquee 10s linear infinite; */
+}
+.lsbu,
+.reading,
+.yilogo {
+  height: 3.5rem;
+}
+
+.east,
+.oieg {
+  height: 7rem;
+}
+.marquee-content img {
+  margin: 0 2rem;
+}
+@keyframes marquee {
+  0% {
+    /* Start from the right */
+    transform: translateX(100%);
+  }
+  100% {
+    /* Move to the left */
+    transform: translateX(-100%);
+  }
+}
+/* !footer styling */
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+.footer-section {
+  background: var(--navy);
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: #00bd2a;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #dedede;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+  max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #dedede;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg {
+  background: #3b5998;
+}
+.twitter-bg {
+  background: #009721;
+}
+.google-bg {
+  background: #009721;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #00bd2a;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover {
+  color: #dedede;
+}
+.footer-widget ul li a {
+  color: #dedede;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2e2e2e;
+  border: 1px solid #2e2e2e;
+  color: #fff;
+}
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: #00bd2a;
+  padding: 13px 20px;
+  border: 1px solid #00bd2a;
+  top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area {
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a {
+  color: #00bd2a;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a {
+  color: #00bd2a;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
 /* >>>> media of container >>>>>> */
 @media only screen and (max-width: 1400px) {
   .container_ {
@@ -204,6 +411,9 @@ section {
   }
   .title {
     font-size: smaller;
+  }
+  .partners-logo img {
+    height: 3rem;
   }
 }
 
@@ -223,5 +433,12 @@ section {
   .form-container {
     width: 90%;
     margin: 0 auto;
+  }
+  .slide {
+    border-bottom: #009721 2px solid;
+  }
+  .slide img {
+    height: 4rem;
+    margin: 1rem auto;
   }
 }

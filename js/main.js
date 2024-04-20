@@ -43,3 +43,14 @@ function hidePopup() {
   overlay.style.display = "none";
   popup.style.display = "none";
 }
+// !partners carousel
+const marquee = document.querySelector(".marquee-content");
+
+// Reset the marquee when it reaches the end
+marquee.addEventListener("animationiteration", () => {
+  // Increase the speed by reducing the duration of the animation
+  marquee.style.animation = "none";
+  setTimeout(() => {
+    marquee.style.animation = "marquee 5s linear infinite"; // Adjust the duration (5s in this example)
+  }, 0);
+});
