@@ -316,4 +316,8 @@
     height: 11px;
     /* width: 30px; */
   }
+  #courses {
+    background: none;
+    background-color: #00bd2926;
+  }
 }
