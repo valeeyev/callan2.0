@@ -17,6 +17,7 @@
     <script defer src="js/hero.js"></script>
     <script defer src="js/courses.js"></script>
     <script defer src="js/result.js"></script>
+    <script defer src="js/main.js"></script>
 
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/nav.css" />
@@ -40,7 +41,7 @@
   </head>
   <body>
     <div class="container_ m-0 p-0">
-      <section class="navigation">
+      <div class="navigation">
         <div class="nav-container">
           <div class="brand">
             <a href="#!" class="flexbox-center"
@@ -74,9 +75,9 @@
             </ul>
           </nav>
         </div>
-      </section>
-      <!-- end of the navbar -->
-      <section class="hero-slider hero-style">
+      </div>
+      <!-- !end of the navbar -->
+      <section id="home" class="hero-slider hero-style">
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -137,7 +138,7 @@
           <div class="swiper-button-prev"></div>
         </div>
       </section>
-      <!-- end of hero slider -->
+      <!-- !end of hero slider -->
       <section class="section_all bg-light" id="about">
         <div class="container">
           <div class="row">
@@ -247,66 +248,71 @@
           </div>
         </div>
       </section>
-      <!-- end of the about us -->
-      <div id="courses" class="border_left">
-        <div class="title border_left">
-          <h1>Kunduzgi kurslarga boshlang'ich oyga 50%lik chegirma!</h1>
-          <p>
-            quyida keltirilgan formani to'ldiring yoki andminstratorga
-            bog'laning
-          </p>
-        </div>
-        <div class="blog-slider">
-          <div class="blog-slider__wrp swiper-wrapper">
-            <div class="blog-slider__item swiper-slide">
-              <div class="blog-slider__img">
-                <img src="images/english.png" alt="" />
-              </div>
-              <div class="blog-slider__content">
-                <span class="blog-slider__code">Kunduzgi qabul ochiq</span>
-                <div class="blog-slider__title">General English va IELTS</div>
-                <div class="blog-slider__text">
-                  IELTS 7 natijali o'qituvchilar bilan o'rganing!
-                </div>
-                <a href="#" class="blog-slider__button">BATAFSIL</a>
-              </div>
-            </div>
-            <div class="blog-slider__item swiper-slide">
-              <div class="blog-slider__img">
-                <img src="images/IT.jpg" alt="" />
-              </div>
-              <div class="blog-slider__content">
-                <span class="blog-slider__code">Veb va mobil dasturlash</span>
-                <div class="blog-slider__title">
-                  Dasturlash va Kompyuter Savodxonligi
-                </div>
-                <div class="blog-slider__text">
-                  Real Loyihalar bajarish bilan birga yaxshi nazariya ham olasiz
-                </div>
-                <a href="#" class="blog-slider__button">BATAFSIL</a>
-              </div>
-            </div>
-
-            <div class="blog-slider__item swiper-slide">
-              <div class="blog-slider__img">
-                <img src="images/russian.jpg" alt="" />
-              </div>
-              <div class="blog-slider__content">
-                <span class="blog-slider__code"
-                  >Rus tilidan C1 sertifikat.</span
-                >
-                <div class="blog-slider__title">Rus tili va Grammatikasi</div>
-                <div class="blog-slider__text">
-                  Rus tili ona tili bo'lgan o'qituvchilar bilan birga
-                </div>
-                <a href="#" class="blog-slider__button">BATAFSIL</a>
-              </div>
-            </div>
+      <!-- !end of the about us -->
+      <section id="courses" class="bg-green">
+        <div id="courses">
+          <div class="title border_left">
+            <h1>
+              Kunduzgi kurslarga boshlang'ich oyga 50%lik chegirma! &#x1F389;
+            </h1>
+            <p>
+              quyida keltirilgan formani to'ldiring yoki andminstratorga
+              bog'laning
+            </p>
           </div>
-          <div class="blog-slider__pagination"></div>
+          <div class="blog-slider">
+            <div class="blog-slider__wrp swiper-wrapper">
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img src="images/english.png" alt="" />
+                </div>
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code">Kunduzgi qabul ochiq</span>
+                  <div class="blog-slider__title">General English va IELTS</div>
+                  <div class="blog-slider__text">
+                    IELTS 7 natijali o'qituvchilar bilan o'rganing!
+                  </div>
+                  <a href="#" class="blog-slider__button">BATAFSIL</a>
+                </div>
+              </div>
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img src="images/IT.jpg" alt="" />
+                </div>
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code">Veb va mobil dasturlash</span>
+                  <div class="blog-slider__title">
+                    Dasturlash va Kompyuter Savodxonligi
+                  </div>
+                  <div class="blog-slider__text">
+                    Real Loyihalar bajarish bilan birga yaxshi nazariya ham
+                    olasiz
+                  </div>
+                  <a href="#" class="blog-slider__button">BATAFSIL</a>
+                </div>
+              </div>
+
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img src="images/russian.jpg" alt="" />
+                </div>
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code"
+                    >Rus tilidan C1 sertifikat.</span
+                  >
+                  <div class="blog-slider__title">Rus tili va Grammatikasi</div>
+                  <div class="blog-slider__text">
+                    Rus tili ona tili bo'lgan o'qituvchilar bilan birga
+                  </div>
+                  <a href="#" class="blog-slider__button">BATAFSIL</a>
+                </div>
+              </div>
+            </div>
+            <div class="blog-slider__pagination"></div>
+          </div>
         </div>
-      </div>
-      <!-- end of the courses -->
+      </section>
+      <!-- !end of the courses -->
       <section id="results">
         <header>
           <h2>Top Natijalar</h2>
@@ -404,6 +410,77 @@
               </a>
             </div>
           </div>
+        </div>
+      </section>
+      <!-- !end of the result section -->
+      <section id="registration" class="bg-deep-green">
+        <div class="form-container">
+          <form id="contactForm" action="#" method="post">
+            <div class="form-group">
+              <label for="name" class="label">*Ism:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="input-field"
+                required
+                placeholder="Ismingizni kiriting"
+              />
+            </div>
+            <div class="form-group">
+              <label for="surname" class="label">*Familya:</label>
+              <input
+                type="text"
+                id="surname"
+                name="surname"
+                class="input-field"
+                required
+                placeholder="Familyangizni kiriting"
+              />
+            </div>
+            <div class="form-group">
+              <label for="tel" class="label">*Telefon Raqami:</label>
+              <input
+                type="tel"
+                id="tel"
+                name="tel"
+                class="input-field"
+                required
+                placeholder="+998"
+              />
+            </div>
+            <div class="form-group">
+              <label for="subject" class="label">* Fan:</label>
+              <select id="subject" name="subject" class="select-field" required>
+                <option value="" disabled selected>
+                  <h1>Fanni tanlang</h1>
+                </option>
+                <option value="General English">
+                  General English &#x1F4D6;;
+                </option>
+                <option value="IELTS">IELTS &#x1F4DA;</option>
+                <option value="Russian">Rus tili &#x1F4D6;</option>
+                <option value="Arabic">Arab Tili العربية;</option>
+                <option value="Kompyuter Savodxonligi">
+                  Kompyuter Savodxonligi 💻
+                </option>
+                <option value="Mobil Dasturlash">Mobil Dasturlash 📱</option>
+                <option value="Veb Dasturlash">Veb Dasturlash 🌐</option>
+              </select>
+            </div>
+            <button type="submit" class="btn_submit">Yuborish</button>
+          </form>
+        </div>
+        <!-- Popup message -->
+        <div class="overlay" id="overlay"></div>
+        <div class="popup" id="popup">
+          <p>
+            Ma'lumotlaringiz yuborildi! &#x1F389; tez orada siz bilan
+            bog'lanamiz!
+          </p>
+          <button onclick="hidePopup()">
+            <i style="color: var(--navy)" class="fa-solid fa-xmark"></i>
+          </button>
         </div>
       </section>
     </div>

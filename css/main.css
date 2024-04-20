@@ -55,9 +55,12 @@ a:focus {
 .second_font {
   font-family: var(--secondary);
 }
+section {
+  padding: 2rem 0;
+}
 .title {
   width: 80%;
-  margin: 1rem auto;
+  margin: 0rem auto;
   font-family: "Space Grotesk", sans-serif;
   font-size: smaller;
   font-weight: 400;
@@ -73,6 +76,97 @@ a:focus {
 }
 .bg-light {
   background-color: #748eaa !important;
+}
+.bg-green {
+  background-color: #00bd2926;
+}
+.bg-deep-green {
+  background-color: #00bd29c7;
+}
+/* !form sytle */
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.input-field,
+.select-field {
+  width: calc(100% - 20px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.select-field option {
+  background-color: var(--navy);
+  color: var(--gold);
+  font-size: larger;
+}
+
+/* Button styling */
+.btn_submit {
+  display: inline-block;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: #009721;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn_submit:hover {
+  background-color: #009721c1;
+}
+
+/* Popup message styling */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: var(--navy);
+  color: var(--gold);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  display: none;
+}
+.popup button {
+  display: block;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+  display: none;
 }
 /* >>>> media of container >>>>>> */
 @media only screen and (max-width: 1400px) {

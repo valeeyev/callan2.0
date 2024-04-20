@@ -48,8 +48,8 @@ section header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  align-items: flex-end;
-  padding-bottom: 1.25rem;
+  align-items: center;
+  /* padding-bottom: 1.25rem; */
 }
 section header h2 {
   color: var(--navy);
