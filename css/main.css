@@ -85,13 +85,12 @@ section {
   background-color: #00bd29c7;
 }
 /* !form sytle */
-#courses {
+#registration {
   background: url(../images/learn.jpg);
   background-repeat: no-repeat;
-  background-size: 1100px;
-  background-position: center;
+  background-size: 50%;
+  background-position: 100%;
 }
-
 .form-container {
   font-family: var(--mainfont);
   max-width: 600px;
