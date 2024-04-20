@@ -21,7 +21,8 @@
   position: relative;
   max-width: 800px;
   margin: 2rem auto;
-  background: var(--navy);
+  background: #1e22358d;
+  backdrop-filter: blur(2px);
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
   padding: 25px;
   border-radius: 7px;
@@ -207,24 +208,28 @@
 }
 
 .blog-slider__code {
-  color: #908ea9;
+  color: #fff;
   margin-bottom: 15px;
   display: block;
-  font-weight: 500;
+  font-weight: 100;
+  font-size: 1.5rem;
+  font-family: var(--mainfont);
 }
 
 .blog-slider__title {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 500;
   color: var(--gold);
   margin-bottom: 20px;
   font-family: "Space Grotesk", sans-serif;
 }
 
 .blog-slider__text {
-  color: #787398;
+  color: #ffffffbe;
   margin-bottom: 30px;
   line-height: 1.5em;
+  font-size: 1.2rem;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .blog-slider__button {

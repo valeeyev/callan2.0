@@ -84,13 +84,20 @@ section {
   background-color: #00bd29c7;
 }
 /* !form sytle */
+#courses {
+  background: url(../images/courses.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .form-container {
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  background-color: #f9f9f9;
+
+  /* background-color: #f9f9f9; */
 }
 
 .form-group {
