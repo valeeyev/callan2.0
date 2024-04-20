@@ -316,8 +316,11 @@
     height: 11px;
     /* width: 30px; */
   }
-  /* #courses {
+  #courses {
     background: none;
     background-color: #00bd2926;
-  } */
+  }
+  .blog-slider {
+    background-color: var(--navy);
+  }
 }
