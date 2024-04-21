@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Natijalar</title>
+    <title>Kurslar</title>
     <link rel="icon" type="image/x-icon" href="images/logo-gold.png" />
     <link
       rel="stylesheet"
@@ -55,16 +55,17 @@
             </div>
 
             <ul class="nav-list">
-              <li><a href="#home">Bosh sahifa</a></li>
+              <li><a href="index.html">Bosh sahifa</a></li>
               <li><a href="about.html">Biz haqimizda</a></li>
               <li>
                 <a href="#!">Kurslar</a>
                 <ul class="nav-dropdown white">
-                  <li><a href="courses.html#regular">Odatiy</a></li>
-                  <li><a href="courses.html#induvidual">Intensiv</a></li>
+                  <li><a href="courses.html#odatiy">Odatiy</a></li>
+
+                  <li><a href="courses.html#induvidual">Induvidual</a></li>
                 </ul>
               </li>
-              <li><a href="#results">Natijalar</a></li>
+              <li><a href="team.html">Natijalar</a></li>
               <li>
                 <a class="highlited" href="index.html#registration"
                   >Kursga yozilish</a
@@ -80,149 +81,45 @@
         </div>
       </div>
       <!-- !end of the navbar -->
-      <div class="teachers-section">
-        <h2 class="section-title">Bizning O'qituvchilarimiz</h2>
-        <div class="teachers-list">
-          <!-- Teacher 1 -->
-          <div class="teacher-card">
-            <img
-              src="images/ustoz_arabiclang.png"
-              alt="Teacher 1"
-              class="teacher-img"
-            />
-            <h3 class="teacher-name">Ustoz Abdulhakim</h3>
-            <p class="teacher-description">
-              Muqaddas Makka shahrida o‘ttiz besh yildan ortiq istiqomat qilgan
-              arab tili o‘qituvchimiz Abdulhakim Ustoz bilan sizni
-              tanishtirishdan mamnunmiz!
+      <section class="about section bd-container" id="about">
+        <h2 class="section-title title">Callan haqida</h2>
+
+        <div class="about__container bd-grid">
+          <div class="about__data bd-grid">
+            <p class="about__description">
+              <span>Callan Education Group<br /></span>Jamoamiz bilan birgalikda
+              3 yil mobaynida Dasturlash, Ingliz tili, Rus tili, Arab tili va
+              ko'plab boshqa fanlardan ta'lim berib kelmoqdamiz. Bixning
+              markazimizda ilm olgan talabalar, o'zlarining maqsadlariga
+              erishmoqdalar.
             </p>
-          </div>
-          <div class="teacher-card">
-            <img
-              src="images/ustoz_flutter.png"
-              alt="Teacher 1"
-              class="teacher-img"
-            />
-            <h3 class="teacher-name">Ustoz Xondamir</h3>
-            <p class="teacher-description">
-              Xondamir Ustoz kop yillik tajribaga ega Mobil Flutter dasturchi
-              instruktor, hozirda Callan Education Centerda dasturlashdan
-              o'quvchilarga bilim berib kelmoqdalar
-            </p>
-          </div>
-          <div class="teacher-card">
-            <img
-              src="images/ustoz_english.png"
-              alt="Teacher 1"
-              class="teacher-img"
-            />
-            <h3 class="teacher-name">Ustoz Salohiddin</h3>
-            <p class="teacher-description">
-              Salohiddin Ustoq "Callan" o'quv markazida 2 yildan ortiq vaqt
-              mobaynida "IELTS" instruktor sifatida dars berib kelmoqdalar
-            </p>
-          </div>
-        </div>
-      </div>
-      <section id="results">
-        <header>
-          <h2 class="border_left">Top Natijalar</h2>
-          <a href="#"
-            >BATAFSIL
-            <svg
-              height="48"
-              viewBox="0 0 48 48"
-              width="48"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M-838-2232H562v3600H-838z" fill="none" />
-              <path d="M16 10v28l22-14z" />
-              <path d="M0 0h48v48H0z" fill="none" /></svg
-          ></a>
-        </header>
-        <div class="grid-container">
-          <div class="grid-item">
-            <div class="grid-item-content">
-              <img src="images/student-girl.jpg" alt="" />
-              <h3>Akbaraliyeva Madinaxon</h3>
-              <span>IELTS 6</span>
-              <a href="#"
-                >read now
-                <svg
-                  height="48"
-                  viewBox="0 0 48 48"
-                  width="48"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M-838-2232H562v3600H-838z" fill="none" />
-                  <path d="M16 10v28l22-14z" />
-                  <path d="M0 0h48v48H0z" fill="none" />
-                </svg>
-              </a>
+
+            <div>
+              <span class="about__number">3+</span>
+              <span class="about__achievement">Yil Tajriba</span>
+            </div>
+
+            <div>
+              <span class="about__number">1000+</span>
+              <span class="about__achievement"
+                >Kurslarni tamomlagan talabalar</span
+              >
+            </div>
+
+            <div>
+              <span class="about__number">600+</span>
+              <span class="about__achievement"
+                >Hozirgi taqsil olayotganlar</span
+              >
             </div>
           </div>
-          <div class="grid-item active">
-            <div class="grid-item-content">
-              <img src="images/student-man.jpg" alt="Asadbek" />
-              <h3>Eminjonov Asadbek</h3>
-              <span>IELTS 6.5</span>
-              <a href="#"
-                >read now
-                <svg
-                  height="48"
-                  viewBox="0 0 48 48"
-                  width="48"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M-838-2232H562v3600H-838z" fill="none" />
-                  <path d="M16 10v28l22-14z" />
-                  <path d="M0 0h48v48H0z" fill="none" />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="grid-item">
-            <div class="grid-item-content">
-              <img src="images/student-girl.jpg" alt="Mohlaroy" />
-              <h3>Baxtiyorova Mohlaroy</h3>
-              <span>IELTS 6.5</span>
-              <a href="#"
-                >read now
-                <svg
-                  height="48"
-                  viewBox="0 0 48 48"
-                  width="48"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M-838-2232H562v3600H-838z" fill="none" />
-                  <path d="M16 10v28l22-14z" />
-                  <path d="M0 0h48v48H0z" fill="none" />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="grid-item">
-            <div class="grid-item-content">
-              <img src="images/student-man.jpg" alt="Isabella Reyes" />
-              <h3>Yaminjonov Axror</h3>
-              <span>IELTS 6.5</span>
-              <a href="#"
-                >read now
-                <svg
-                  height="48"
-                  viewBox="0 0 48 48"
-                  width="48"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M-838-2232H562v3600H-838z" fill="none" />
-                  <path d="M16 10v28l22-14z" />
-                  <path d="M0 0h48v48H0z" fill="none" />
-                </svg>
-              </a>
-            </div>
-          </div>
+
+          <img src="images/logo-gold.png" alt="" class="about__img" />
         </div>
       </section>
+
+      <!-- !end of the courses -->
+
       <footer class="footer-section">
         <div class="container">
           <div class="footer-cta pt-5 pb-5">
@@ -232,7 +129,7 @@
                   <i class="fas fa-map-marker-alt"></i>
                   <div class="cta-text">
                     <h4>Mazil</h4>
-                    <span>Qo'qon shahar, Hamza 12-uy</span>
+                    <span>1010 Qo'qon shahar, Hamza 12-uy</span>
                   </div>
                 </div>
               </div>
@@ -250,7 +147,7 @@
                   <i class="far fa-envelope-open"></i>
                   <div class="cta-text">
                     <h4>E-pochta manzili</h4>
-                    <span>callaneducation.uz@gmail.com</span>
+                    <span>callaneducatio.uz@gmail.com</span>
                   </div>
                 </div>
               </div>
