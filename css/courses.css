@@ -342,9 +342,10 @@
   margin: 0 auto;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 3rem;
 }
-.oddiy {
+.oddiy,
+.induvidual {
   background-color: #ceccdf69;
   backdrop-filter: blur(7px);
   box-shadow: 0px 0px 0px 7px #ceccdf6c;
@@ -352,10 +353,11 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 5rem;
+  gap: 3rem;
   flex-wrap: wrap;
   z-index: 500;
   border-radius: 7px;
+  transition: all ease 04s;
 }
 .oddiy h3 {
   padding: 2rem 0 0 1rem;
@@ -421,7 +423,14 @@
 .buy:hover {
   background-color: #00bd29dd; /* Change button color on hover */
 }
-
+.induvidual {
+  z-index: 500;
+  background-color: #1e2235bf;
+}
+.induvidual h3 {
+  color: var(--gold);
+  padding: 2rem 0 0 1rem;
+}
 /* Media queries for responsiveness */
 
 @media (max-width: 768px) {
@@ -433,5 +442,8 @@
     justify-content: center;
     width: 100%;
     height: auto;
+  }
+  .section-head {
+    background-size: contain;
   }
 }
