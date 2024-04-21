@@ -54,3 +54,4 @@ marquee.addEventListener("animationiteration", () => {
     marquee.style.animation = "marquee 5s linear infinite"; // Adjust the duration (5s in this example)
   }, 0);
 });
+// !fetch about.html
