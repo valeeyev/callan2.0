@@ -431,6 +431,10 @@
   color: var(--gold);
   padding: 2rem 0 0 1rem;
 }
+#enroll {
+  width: 80%;
+  margin-bottom: 2rem;
+}
 /* Media queries for responsiveness */
 
 @media (max-width: 768px) {
